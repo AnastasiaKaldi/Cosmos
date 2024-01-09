@@ -2,6 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'homemade apple';
+  src: url('/public/Homemade_Apple/HomemadeApple-Regular.ttf')
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -45,6 +50,24 @@
   color: #888;
 }
 
+.home {
+  font-family: 'homemade apple', serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 .video-background {
   position: fixed;
@@ -59,5 +82,34 @@
   object-fit: cover;
   /* This will cover the area and clip the video */
   background-size: cover;
+}
+
+/* App.css */
+
+/* Example styles for NavBar */
+nav {
+  font-family: Arial, sans-serif; /* Set the font for the navigation */
+}
+
+/* Styling for the icon */
+.cursor-pointer {
+  cursor: pointer; /* Set the cursor to indicate it's clickable */
+}
+
+/* Styling for the dropdown menu */
+.bg-white {
+  background-color: white; /* Set the background color of the dropdown */
+}
+
+.space-y-4 > li > a {
+  padding: 0.5rem 1rem; /* Padding around each navigation link */
+  display: block; /* Display links as blocks */
+  color: black; /* Text color for links */
+  text-decoration: none; /* Remove default link underline */
+  transition: background-color 0.3s; /* Add transition for smoother effect */
+}
+
+.space-y-4 > li > a:hover {
+  background-color: #f0f0f0; /* Background color on hover */
 }
 
