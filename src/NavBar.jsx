@@ -11,6 +11,7 @@ const NavBar = () => {
 
   return (
     <nav className="fixed top-0 right-0 p-6">
+      {/* Add onClick directly to the img tag */}
       <img
         src={icon}
         alt="menu"
@@ -18,7 +19,7 @@ const NavBar = () => {
         className="cursor-pointer w-15 h-15"
       />
       <ul
-        className={`absolute right-0 mt-2 bg-white space-y-4 text-black shadow-lg rounded-lg p-4 ${
+        className={`dropdown-menu absolute right-0 mt-2 bg-white space-y-4 text-black shadow-lg rounded-lg p-4 ${
           isOpen ? "block" : "hidden"
         }`}
       >

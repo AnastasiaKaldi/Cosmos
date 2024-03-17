@@ -4,7 +4,7 @@ import solar from "../public/solar.mp4";
 function App() {
   return (
     <div className="App">
-      <h1 className="home text-bold text-8xl flex flex-col justify-center items-center">
+      <h1 className="home text-indigo-950 text-8xl justify-center items-center">
         Welcome
         <span className="text-9xl">to the Cosmos</span>
       </h1>
