@@ -83,7 +83,7 @@ const PlanetsContent = () => {
             Inside the Solar System
           </span>
         </h3>
-        <a href="#" className="block text-m hover:underline">
+        <a href="/venus" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Venus</span>
         </a>
         <a href="#" className="block text-m hover:underline">

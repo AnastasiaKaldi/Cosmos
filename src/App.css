@@ -21,43 +21,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #ff9d64aa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
 
 .home {
   font-family: 'homemade apple', serif;
@@ -98,7 +61,7 @@
   position: fixed;
   z-index: 1;
   right:5%;
-  background-color: rgba(127, 106, 139, 0.372);
+  background-color: rgba(127, 106, 139, 0.334);
 }
 .PlanetComponent{
   right: 15%;
@@ -120,37 +83,6 @@
   bottom: 40%;
 }
 
-.dropdown-menu {
-  background-color: #ffffff !important; 
-   position: absolute;
-   top: 100px;
-   right: 20px;
-   padding: 10px 20px;
-   border-radius: var(--border-radius);
-   width: 200px;
-   height: 250px;
-   border: 1px solid gray;
- 
- }
-  .dropdown-menu.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition: var(--speed) ease;
-  }
-
- .dropdown-menu::before {
-  content: '';
-  position: absolute;
-  top: -5rem;
-  right: 20px;
-  height: 20px;
-  width: 20px;
-  background: var(--border-radius);
-  transform: rotate(45deg);
-  border-left: 1px solid gray;
-  border-top: 1px solid gray;
-  background-color: white;}
 
   h3{
     width: 100%;
@@ -163,7 +95,38 @@
     line-height: 1.2rem;
   }
 
-  .dropdown-menu ul li{
-    padding: 10px 0;
-    border-top: 1px solid gray;
+  .Sky{
+    background-image: url('/public/sky.jpg');
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Venus{
+    position: absolute;
+    bottom:40rem;
+    left:78rem;
+    
+  }
+
+  .VenusContainer{
+    background-color: rgba(113, 135, 158, 0.279);
+    position: absolute;
+    top: 25rem; /* Tailwind top-64 equivalent */
+    right: 10rem; /* Tailwind right-40 equivalent */
+    max-width: 40%; /* Set your desired max-width */
+    max-height: 85%; /* Set your desired max-height *//* Enable scrolling */
+    padding: 15px; /* Adjust padding to fit your design */
+    border: 1px solid black; /* Border settings */
+    border-radius: 1rem; /* Tailwind rounded-2xl equivalent */ /* Text color */
+    font-size: 1.2rem; /* Tailwind text-sm equivalent */
+    transition: transform 0.3s; 
   }
