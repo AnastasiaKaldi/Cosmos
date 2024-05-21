@@ -2,9 +2,16 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Custom CSS for specific elements */
 @font-face {
   font-family: 'homemade apple';
-  src: url('/public/Homemade_Apple/HomemadeApple-Regular.ttf')
+  src: url('/public/Homemade_Apple/HomemadeApple-Regular.ttf');
+  
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
 
 #root {
@@ -20,9 +27,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #ff9d64aa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -67,79 +76,94 @@
   height: 100%;
 }
 
-
 .video-background {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  /* This will cover the area and clip the video */
-  background-size: cover;
+  z-index: -1;
 }
 
-/* App.css */
-
-/* Example styles for NavBar */
-nav {
-  font-family: Arial, sans-serif; /* Set the font for the navigation */
+.NavBar{
+  /* display: grid; */
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Silkscreen', sans-serif  ;
+  width: 100%;
+  height: 10vh;
+  padding: 0 5%;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 1;
+  right:5%;
+  background-color: rgba(127, 106, 139, 0.372);
+}
+.PlanetComponent{
+  right: 15%;
+  top: 45%;
 }
 
-/* Styling for the icon */
-.cursor-pointer {
-  cursor: pointer; /* Set the cursor to indicate it's clickable */
+.StarsComponent{
+  left: 35%;
+  bottom: 7%;
 }
 
-/* Styling for the dropdown menu */
-.bg-white {
-  background-color: white; /* Set the background color of the dropdown */
+.GalaxyComponent{
+  left: 55%;
+  bottom: 64%;
 }
 
-.space-y-4 > li > a {
-  padding: 0.5rem 1rem; /* Padding around each navigation link */
-  display: block; /* Display links as blocks */
-  color: black; /* Text color for links */
-  text-decoration: none; /* Remove default link underline */
-  transition: background-color 0.3s; /* Add transition for smoother effect */
-}
-
-.space-y-4 > li > a:hover {
-  background-color: #f0f0f0; /* Background color on hover */
-}
-
-.navbar {
-  position: relative;
+.Cosmos{
+  right: 54%;
+  bottom: 40%;
 }
 
 .dropdown-menu {
-  display: none;
+  background-color: #ffffff !important; 
+   position: absolute;
+   top: 100px;
+   right: 20px;
+   padding: 10px 20px;
+   border-radius: var(--border-radius);
+   width: 200px;
+   height: 250px;
+   border: 1px solid gray;
+ 
+ }
+  .dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+  }
+
+ .dropdown-menu::before {
+  content: '';
   position: absolute;
-  right: 0;
-  margin-top: 10px;
-  width: 200px;
-  background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
+  top: -5rem;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--border-radius);
+  transform: rotate(45deg);
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  background-color: white;}
 
-.dropdown-menu.show {
-  display: block;
-}
+  h3{
+    width: 100%;
+    text-align: center;
+    font-size: 10rem;
+    padding: 20px 0;
+    font-weight: 5rem;
+    font-size: 18px;
+    color: var(--primary-text-color);
+    line-height: 1.2rem;
+  }
 
-.dropdown-menu a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-menu a:hover {
-  background-color: #ddd;
-}
-
+  .dropdown-menu ul li{
+    padding: 10px 0;
+    border-top: 1px solid gray;
+  }
