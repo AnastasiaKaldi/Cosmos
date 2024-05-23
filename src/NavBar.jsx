@@ -86,22 +86,22 @@ const PlanetsContent = () => {
         <a href="/venus" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Venus</span>
         </a>
-        <a href="#" className="block text-m hover:underline">
+        <a href="/mars" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Mars</span>
         </a>
-        <a href="#" className="block text-m hover:underline">
+        <a href="/jupiter" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Jupiter</span>
         </a>
-        <a href="#" className="block text-m hover:underline">
+        <a href="/earth" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Earth</span>
         </a>
-        <a href="#" className="block text-m hover:underline">
+        <a href="/mercury" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Mercury</span>
         </a>
-        <a href="#" className="block text-m hover:underline">
+        <a href="/neptune" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Neptune</span>
         </a>
-        <a href="#" className="block text-m hover:underline">
+        <a href="/saturn" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Saturn</span>
         </a>
       </div>
@@ -111,15 +111,15 @@ const PlanetsContent = () => {
             Outside the Solar System
           </span>
         </h3>
-        <a href="#" className="block text-m hover:underline">
+        <a href="/kepler-186f" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Kepler-186f</span>
         </a>
-        <a href="#" className="block text-m hover:underline">
+        <a href="/proxima-centauri-b" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>
             Proxima Centauri b
           </span>
         </a>
-        <a href="#" className="block text-m hover:underline">
+        <a href="51-pegasi-b" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>51 Pegasi b</span>
         </a>
       </div>

@@ -1,13 +1,16 @@
 import "./App.css";
 
-function Venus() {
+function Pegasi() {
   return (
     <div className="Sky">
-      <div className="Venus text-rose-900 text-7xl">
-        <span style={{ fontFamily: "Homemade Apple" }}>Venus</span>
+      <div className="Venus text-fuchsia-200 text-7xl">
+        <span style={{ fontFamily: "Homemade Apple" }}>51 Pagausus b</span>
       </div>
-      <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm">
-        <a className="text-rose-300" style={{ fontFamily: "Playfair Display" }}>
+      <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm transition-transform hover:scale-200">
+        <a
+          className="text-fuchsia-200"
+          style={{ fontFamily: "Playfair Display" }}
+        >
           Venus is the second planet from the Sun, and the sixth largest planet.
           It’s the hottest planet in our solar system. Venus is a cloud-swaddled
           planet named for a love goddess, and often called Earth’s twin. But
@@ -40,4 +43,4 @@ function Venus() {
   );
 }
 
-export default Venus;
+export default Pegasi;
