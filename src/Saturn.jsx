@@ -1,4 +1,5 @@
 import "./App.css";
+import SaturnCanvas from "./SaturnCanvas";
 
 function Saturn() {
   return (
@@ -35,6 +36,9 @@ function Saturn() {
           with others continually awaiting confirmation of their discovery and
           official naming by the International Astronomical Union (IAU).
         </a>
+      </div>
+      <div className="SaturnCanvas">
+        <SaturnCanvas />{" "}
       </div>
     </div>
   );

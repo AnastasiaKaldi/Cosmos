@@ -5,7 +5,7 @@ import { useRef, Suspense } from "react";
 
 const Jupiter = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../public/jupiter.jpeg"); // Ensure this path is correct
+  const texture = textureLoader.load("../public/Jupiter.jpg"); // Ensure this path is correct
 
   // Ensure the texture wraps around correctly
   texture.wrapS = THREE.ClampToEdgeWrapping;
