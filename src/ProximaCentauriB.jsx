@@ -5,36 +5,30 @@ function Venus() {
   return (
     <div className="Sky">
       <div className="Venus text-rose-900 text-7xl">
-        <span style={{ fontFamily: "Homemade Apple" }}>Proxima Centauri B</span>
+        <span style={{ fontFamily: "Homemade Apple" }}>
+          Proxima <br /> Centauri B
+        </span>
       </div>
       <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm">
         <a className="text-rose-300" style={{ fontFamily: "Playfair Display" }}>
-          Venus is the second planet from the Sun, and the sixth largest planet.
-          It’s the hottest planet in our solar system. Venus is a cloud-swaddled
-          planet named for a love goddess, and often called Earth’s twin. But
-          pull up a bit closer, and Venus turns hellish. <br />
-          <br />
-          Our nearest planetary neighbor, the second planet from the Sun, has a
-          surface hot enough to melt lead. The atmosphere is so thick that, from
-          the surface, the Sun is just a smear of light. In some ways it is more
-          an opposite of Earth than a twin: Venus spins backward, has a day
-          longer than its year, and lacks any semblance of seasons. It might
-          once have been a habitable ocean world, like Earth, but that was at
-          least a billion years ago. <br />
-          <br />A runaway greenhouse effect turned all surface water into vapor,
-          which then leaked slowly into space. The present-day surface of
-          volcanic rock is blasted by high temperatures and pressures. Asked if
-          the surface of Venus is likely to be life-bearing today, we can give a
-          quick answer: a hard “no.” Further, Venus may hold lessons about what
-          it takes for life to get its start ­– on Earth, in our solar system,
-          or across the galaxy. The ingredients are all there, or at least, they
-          used to be. <br />
-          <br />
-          By studying why our neighbor world went in such a different direction
-          with regard to habitability, we could find out what could make other
-          worlds right. And while it might sound absurd, we can’t rule out life
-          on Venus entirely. Temperature, air pressure, and chemistry are much
-          more congenial up high, in those thick, yellow clouds.
+          Proxima Centauri b (or Proxima b),[5] sometimes referred to as Alpha
+          Centauri Cb, is an exoplanet orbiting within the habitable zone of the
+          red dwarf star Proxima Centauri, which is the closest star to the Sun
+          and part of the larger triple star system Alpha Centauri. It is about
+          4.2 light-years (1.3 parsecs) from Earth in the constellation
+          Centaurus, making it and Proxima d, along with the currently disputed
+          Proxima c, the closest known exoplanets to the Solar System.Proxima
+          Centauri b orbits its parent star at a distance of roughly 0.04856 AU
+          (7.264 million km; 4.514 million mi) with an orbital period of
+          approximately 11.2 Earth days. Its other properties are only poorly
+          understood, but it is believed to be a potentially Earth-like planet
+          with a minimum mass of at least 1.07 M🜨 and only a slightly larger
+          radius than that of Earth. The planet orbits within the habitable zone
+          of its parent star; but it is not known whether it has an atmosphere.
+          Proxima Centauri is a flare star with intense emission of
+          electromagnetic radiation that could strip an atmosphere off the
+          planet. The planets proximity to Earth offers an opportunity for
+          robotic space exploration.
         </a>
       </div>
       <div className="VenusCanvas">

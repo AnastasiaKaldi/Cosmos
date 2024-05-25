@@ -9,32 +9,25 @@ function Venus() {
       </div>
       <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm">
         <a className="text-rose-300" style={{ fontFamily: "Playfair Display" }}>
-          Venus is the second planet from the Sun, and the sixth largest planet.
-          It’s the hottest planet in our solar system. Venus is a cloud-swaddled
-          planet named for a love goddess, and often called Earth’s twin. But
-          pull up a bit closer, and Venus turns hellish. <br />
-          <br />
-          Our nearest planetary neighbor, the second planet from the Sun, has a
-          surface hot enough to melt lead. The atmosphere is so thick that, from
-          the surface, the Sun is just a smear of light. In some ways it is more
-          an opposite of Earth than a twin: Venus spins backward, has a day
-          longer than its year, and lacks any semblance of seasons. It might
-          once have been a habitable ocean world, like Earth, but that was at
-          least a billion years ago. <br />
-          <br />A runaway greenhouse effect turned all surface water into vapor,
-          which then leaked slowly into space. The present-day surface of
-          volcanic rock is blasted by high temperatures and pressures. Asked if
-          the surface of Venus is likely to be life-bearing today, we can give a
-          quick answer: a hard “no.” Further, Venus may hold lessons about what
-          it takes for life to get its start ­– on Earth, in our solar system,
-          or across the galaxy. The ingredients are all there, or at least, they
-          used to be. <br />
-          <br />
-          By studying why our neighbor world went in such a different direction
-          with regard to habitability, we could find out what could make other
-          worlds right. And while it might sound absurd, we can’t rule out life
-          on Venus entirely. Temperature, air pressure, and chemistry are much
-          more congenial up high, in those thick, yellow clouds.
+          Kepler-186f, the first Earth-sized extrasolar planet to be found
+          within its star’s habitable zone—the orbital region where an
+          Earth-like planet could possess liquid water on its surface and thus
+          possibly support life. Kepler-186f was discovered in 2014 in data
+          taken by the Kepler satellite before its mission ended the previous
+          year. The planet has a radius 1.11 times that of Earth. The mass of
+          Kepler-186f is unknown; however, if it has an Earth-like composition,
+          its mass would be 1.44 times that of Earth. It was the fifth planet
+          discovered around its star, a dim red dwarf 500 light-years from Earth
+          with a mass 0.48 times that of the Sun. Kepler-186f orbits its star
+          every 129.9 days at a distance of 53.2 million km (33.1 million
+          miles). It receives only 32 percent of the amount of light that Earth
+          receives from the Sun, but water could exist in a liquid state if its
+          atmosphere has sufficient amounts of carbon dioxide. The other four
+          planets in the system are Earth-sized; however, they orbit much closer
+          to the star and thus are not within the habitable zone. Kepler-186f is
+          far enough away from its star that it may not be tidally locked (i.e.,
+          its day may not be as long as its year, with one side always facing
+          its star).
         </a>
       </div>
       <div className="VenusCanvas">
