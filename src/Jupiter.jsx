@@ -1,4 +1,5 @@
 import "./App.css";
+import JupiterCanvas from "./JupiterCanvas.jsx";
 
 function Jupiter() {
   return (
@@ -39,6 +40,9 @@ function Jupiter() {
           the most fascinating destinations in our solar system. ’s Europa
           Clipper mission slated to launch in 2024.
         </a>
+      </div>
+      <div className="JupiterCanvas">
+        <JupiterCanvas />
       </div>
     </div>
   );
