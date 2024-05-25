@@ -1,4 +1,6 @@
 import "./App.css";
+import VenusCanvas from "./VenusCanvas";
+("./VenusCanvas.jsx");
 
 function Venus() {
   return (
@@ -35,6 +37,9 @@ function Venus() {
           on Venus entirely. Temperature, air pressure, and chemistry are much
           more congenial up high, in those thick, yellow clouds.
         </a>
+      </div>
+      <div className="VenusCanvas">
+        <VenusCanvas />
       </div>
     </div>
   );

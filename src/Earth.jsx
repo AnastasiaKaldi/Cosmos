@@ -1,4 +1,5 @@
 import "./App.css";
+import EarthCanvas from "./EarthCanvas.jsx";
 
 function Earth() {
   return (
@@ -40,6 +41,9 @@ function Earth() {
           billions of years ago. When Earth was a young planet, a large chunk of
           rock smashed into it, displacing a portion of Earth’s interior.
         </a>
+      </div>
+      <div className="EarthCanvas">
+        <EarthCanvas />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import "./App.css";
-
+import NeptuneCanvas from "./NeptuneCanvas.jsx";
 function Neptune() {
   return (
     <div className="Sky">
@@ -41,6 +41,9 @@ function Neptune() {
           Voyager, has been detected from Earth several times since, and is
           growing warmer, but scientists do not yet know why.
         </a>
+      </div>
+      <div className="NeptuneCanvas">
+        <NeptuneCanvas />
       </div>
     </div>
   );

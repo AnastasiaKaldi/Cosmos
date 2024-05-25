@@ -1,4 +1,5 @@
 import "./App.css";
+import MarsCanvas from "./MarsCanvas.jsx";
 
 function Mars() {
   return (
@@ -41,6 +42,9 @@ function Mars() {
           fills the craters on its surface, making it appear smoother than
           pockmarked Phobos.
         </a>
+      </div>
+      <div className="MarsCanvas">
+        <MarsCanvas />
       </div>
     </div>
   );

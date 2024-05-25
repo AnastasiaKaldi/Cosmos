@@ -1,4 +1,5 @@
 import "./App.css";
+import MercuryCanvas from "./MercuryCanvas.jsx";
 
 function Mercury() {
   return (
@@ -27,6 +28,9 @@ function Mercury() {
           wind and striking meteoroids. Mercury’s exosphere is composed mostly
           of oxygen, sodium, hydrogen, helium, and potassium.
         </a>
+      </div>
+      <div className="MercuryCanvas">
+        <MercuryCanvas />{" "}
       </div>
     </div>
   );
