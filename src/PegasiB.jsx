@@ -1,4 +1,5 @@
 import "./App.css";
+import PegasiCanvas from "./PegasiCanvas.jsx";
 
 function Pegasi() {
   return (
@@ -38,6 +39,9 @@ function Pegasi() {
           on Venus entirely. Temperature, air pressure, and chemistry are much
           more congenial up high, in those thick, yellow clouds.
         </a>
+      </div>
+      <div className="VenusCanvas">
+        <PegasiCanvas />{" "}
       </div>
     </div>
   );

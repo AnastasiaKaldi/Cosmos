@@ -1,10 +1,11 @@
 import "./App.css";
+import ProximaCanvas from "./ProximaCanvas.jsx";
 
 function Venus() {
   return (
     <div className="Sky">
       <div className="Venus text-rose-900 text-7xl">
-        <span style={{ fontFamily: "Homemade Apple" }}>Venus</span>
+        <span style={{ fontFamily: "Homemade Apple" }}>Proxima Centauri B</span>
       </div>
       <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm">
         <a className="text-rose-300" style={{ fontFamily: "Playfair Display" }}>
@@ -35,6 +36,9 @@ function Venus() {
           on Venus entirely. Temperature, air pressure, and chemistry are much
           more congenial up high, in those thick, yellow clouds.
         </a>
+      </div>
+      <div className="VenusCanvas">
+        <ProximaCanvas />{" "}
       </div>
     </div>
   );
