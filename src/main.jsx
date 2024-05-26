@@ -14,6 +14,10 @@ import Saturn from "./Saturn.jsx";
 import Kepler186f from "./Kepler186f.jsx";
 import ProximaCentauriB from "./ProximaCentauriB.jsx";
 import PegasiB from "./PegasiB.jsx";
+import Sun from "./Sun.jsx";
+import Arcturus from "./Arcturus.jsx";
+import MilkyWay from "./Milky-Way.jsx";
+import Andromeda from "./Andromeda.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -56,6 +60,22 @@ const router = createBrowserRouter([
   {
     path: "/51-pegasi-b",
     element: <PegasiB />,
+  },
+  {
+    path: "/sun",
+    element: <Sun />,
+  },
+  {
+    path: "/arcturus",
+    element: <Arcturus />,
+  },
+  {
+    path: "/milky-way",
+    element: <MilkyWay />,
+  },
+  {
+    path: "/andromeda",
+    element: <Andromeda />,
   },
 ]);
 

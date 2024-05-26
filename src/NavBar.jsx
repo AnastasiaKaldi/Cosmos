@@ -131,13 +131,10 @@ const StarsContent = () => {
   return (
     <div className="w-64 bg-indigo-200 rounded-xl p-6">
       <div className="mb-3 space-y-3">
-        <a href="#" className="block text-lg hover:underline">
+        <a href="/sun" className="block text-lg hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>The Sun</span>
         </a>
-        <a href="#" className="block text-lg hover:underline">
-          <span style={{ fontFamily: "Playfair Display" }}>Vega</span>
-        </a>
-        <a href="#" className="block text-lg hover:underline">
+        <a href="/arcturus" className="block text-lg hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Arcturus</span>
         </a>
       </div>
@@ -149,10 +146,10 @@ const GalaxiesContent = () => {
   return (
     <div className="w-64 bg-indigo-200 rounded-xl p-6">
       <div className="mb-3 space-y-3">
-        <a href="#" className="block text-lg hover:underline">
+        <a href="/milky-way" className="block text-lg hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Milky Way</span>
         </a>
-        <a href="#" className="block text-lg hover:underline">
+        <a href="/andromeda" className="block text-lg hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Andromeda</span>
         </a>
       </div>
