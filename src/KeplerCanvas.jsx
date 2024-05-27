@@ -5,9 +5,7 @@ import { useRef, Suspense } from "react";
 
 const Kepler = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../public/Kepler186f.png"); // Ensure this path is correct
-
-  // Ensure the texture wraps around correctly
+  const texture = textureLoader.load("../public/Kepler186f.png");
   texture.wrapS = THREE.ClampToEdgeWrapping;
   texture.wrapT = THREE.ClampToEdgeWrapping;
   texture.minFilter = THREE.LinearFilter;
@@ -18,7 +16,7 @@ const Kepler = () => {
 
   useFrame(() => {
     if (meshRef.current) {
-      meshRef.current.rotation.y += 0.005; // Adjust the rotation speed as needed
+      meshRef.current.rotation.y += 0.005;
     }
   });
 

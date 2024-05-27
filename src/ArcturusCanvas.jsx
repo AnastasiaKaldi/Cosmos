@@ -5,9 +5,8 @@ import { useRef, Suspense } from "react";
 
 const Pegasi = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../public/Arcturus.png"); // Ensure this path is correct
+  const texture = textureLoader.load("../public/Arcturus.png");
 
-  // Ensure the texture wraps around correctly
   texture.wrapS = THREE.ClampToEdgeWrapping;
   texture.wrapT = THREE.ClampToEdgeWrapping;
   texture.minFilter = THREE.LinearFilter;
@@ -16,9 +15,10 @@ const Pegasi = () => {
 
   const meshRef = useRef();
 
+  //Rotation
   useFrame(() => {
     if (meshRef.current) {
-      meshRef.current.rotation.y += 0.005; // Adjust the rotation speed as needed
+      meshRef.current.rotation.y += 0.005;
     }
   });
 

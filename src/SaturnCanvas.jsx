@@ -13,23 +13,20 @@ const Saturn = ({ position }) => {
   const saturnRef = useRef();
   const ringsRef = useRef();
 
-  // Rotate the planet and rings in the animation loop
   useFrame(() => {
     if (saturnRef.current && ringsRef.current) {
-      saturnRef.current.rotation.y += 0.005; // Adjust rotation speed as needed
-      ringsRef.current.rotation.z += 0.005; // Rotate rings slowly
+      saturnRef.current.rotation.y += 0.005;
+      ringsRef.current.rotation.z += 0.005;
     }
   });
 
   return (
     <group position={position}>
-      {/* Saturn's Body */}
       <mesh ref={saturnRef}>
         <sphereGeometry args={[2.5, 84, 84]} />
         <meshStandardMaterial map={saturnTexture} />
       </mesh>
 
-      {/* Saturn's Rings */}
       <mesh ref={ringsRef} rotation={[Math.PI / 2, 0, 0]}>
         <ringGeometry args={[4, 3, 64]} />
         <meshBasicMaterial
@@ -43,7 +40,6 @@ const Saturn = ({ position }) => {
 };
 
 const SaturnCanvas = () => {
-  // Adjust the position here, for example [3, 1, -7] moves Saturn to the desired location
   const saturnPosition = [-5, 1, -4];
 
   return (

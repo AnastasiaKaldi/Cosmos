@@ -160,14 +160,12 @@ const GalaxiesContent = () => {
   );
 };
 
-// Define prop types for the FlyoutLink component
 FlyoutLink.propTypes = {
   children: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
   FlyoutContent: PropTypes.node,
 };
 
-// Provide default props for FlyoutLink
 FlyoutLink.defaultProps = {
   FlyoutContent: null,
 };
