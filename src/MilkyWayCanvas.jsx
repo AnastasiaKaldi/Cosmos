@@ -5,22 +5,17 @@ import { useRef, Suspense } from "react";
 
 const Pegasi = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../public/Arcturus.png"); // Ensure this path is correct
+  const texture = textureLoader.load("../public/MilkyWay."); // Ensure this path is correct
 
   // Ensure the texture wraps around correctly
   texture.wrapS = THREE.ClampToEdgeWrapping;
   texture.wrapT = THREE.ClampToEdgeWrapping;
   texture.minFilter = THREE.LinearFilter;
 
-  const geometry = new THREE.SphereGeometry(2.4, 64, 64);
+  const geometry = new THREE.SphereGeometry(2, 32, 32);
+  geometry.scale(1.5, 1, 0.5);
 
   const meshRef = useRef();
-
-  useFrame(() => {
-    if (meshRef.current) {
-      meshRef.current.rotation.y += 0.005; // Adjust the rotation speed as needed
-    }
-  });
 
   return (
     <mesh ref={meshRef} geometry={geometry}>

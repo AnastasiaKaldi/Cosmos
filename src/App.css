@@ -130,3 +130,47 @@
     font-size: 1.2rem; /* Tailwind text-sm equivalent */
     transition: transform 0.3s; 
   }
+
+  .AndromedaContainer{
+    background-color: rgba(113, 135, 158, 0.279);
+    position: absolute;
+    top: 25rem; /* Tailwind top-64 equivalent */
+    right: 10rem; /* Tailwind right-40 equivalent */
+    max-width: 80%; /* Set your desired max-width */
+    max-height: 90%; /* Set your desired max-height *//* Enable scrolling */
+    padding: 15px; /* Adjust padding to fit your design */
+    border: 1px solid black; /* Border settings */
+    border-radius: 1rem; /* Tailwind rounded-2xl equivalent */ /* Text color */
+    font-size: 1.2rem; /* Tailwind text-sm equivalent */
+    transition: transform 0.3s;
+  }
+
+ .Milk{
+  background-image: url('../public/MilkyWay.avif');
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ }
+
+ .andromeda{
+  background-image: url('../public/Andromeda.jpeg');
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ }

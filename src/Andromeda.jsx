@@ -1,15 +1,16 @@
 import "./App.css";
-import VenusCanvas from "./VenusCanvas";
-("./VenusCanvas.jsx");
 
 function Venus() {
   return (
-    <div className="Sky">
-      <div className="Venus text-rose-900 text-7xl">
+    <div className="andromeda">
+      <div className="Venus text-violet-300 text-7xl">
         <span style={{ fontFamily: "Homemade Apple" }}>Andromeda</span>
       </div>
-      <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm">
-        <a className="text-rose-300" style={{ fontFamily: "Playfair Display" }}>
+      <div className="AndromedaContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm">
+        <a
+          className="text-violet-200"
+          style={{ fontFamily: "Playfair Display" }}
+        >
           Venus is the second planet from the Sun, and the sixth largest planet.
           It’s the hottest planet in our solar system. Venus is a cloud-swaddled
           planet named for a love goddess, and often called Earth’s twin. But
@@ -38,9 +39,7 @@ function Venus() {
           more congenial up high, in those thick, yellow clouds.
         </a>
       </div>
-      <div className="VenusCanvas">
-        <VenusCanvas />
-      </div>
+      <div className="VenusCanvas"></div>
     </div>
   );
 }
