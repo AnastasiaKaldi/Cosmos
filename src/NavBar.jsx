@@ -104,6 +104,9 @@ const PlanetsContent = () => {
         <a href="/saturn" className="block text-m hover:underline">
           <span style={{ fontFamily: "Playfair Display" }}>Saturn</span>
         </a>
+        <a href="/uranus" className="block text-m hover:underline">
+          <span style={{ fontFamily: "Playfair Display" }}>Uranus</span>
+        </a>
       </div>
       <div className="mb-6 space-y-3">
         <h3 className="font-semibold">

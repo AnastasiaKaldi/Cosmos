@@ -4,11 +4,14 @@ import SunCanvas from "./SunCanvas";
 function Sun() {
   return (
     <div className="Sky">
-      <div className="Venus text-rose-900 text-7xl">
+      <div className="Venus text-amber-300 text-7xl">
         <span style={{ fontFamily: "Homemade Apple" }}>Sun</span>
       </div>
       <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm">
-        <a className="text-rose-300" style={{ fontFamily: "Playfair Display" }}>
+        <a
+          className="text-yellow-200"
+          style={{ fontFamily: "Playfair Display" }}
+        >
           The Suns gravity holds the solar system together, keeping everything –
           from the biggest planets to the smallest particles of debris – in its
           orbit. The connection and interactions between the Sun and Earth drive

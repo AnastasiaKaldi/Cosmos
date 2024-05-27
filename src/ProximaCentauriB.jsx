@@ -4,13 +4,16 @@ import ProximaCanvas from "./ProximaCanvas.jsx";
 function Venus() {
   return (
     <div className="Sky">
-      <div className="Venus text-rose-900 text-7xl">
+      <div className="Venus text-amber-500 text-7xl">
         <span style={{ fontFamily: "Homemade Apple" }}>
           Proxima <br /> Centauri B
         </span>
       </div>
       <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm">
-        <a className="text-rose-300" style={{ fontFamily: "Playfair Display" }}>
+        <a
+          className="text-amber-200"
+          style={{ fontFamily: "Playfair Display" }}
+        >
           Proxima Centauri b (or Proxima b),[5] sometimes referred to as Alpha
           Centauri Cb, is an exoplanet orbiting within the habitable zone of the
           red dwarf star Proxima Centauri, which is the closest star to the Sun

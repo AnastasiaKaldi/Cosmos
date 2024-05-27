@@ -18,6 +18,7 @@ import Sun from "./Sun.jsx";
 import Arcturus from "./Arcturus.jsx";
 import MilkyWay from "./Milky-Way.jsx";
 import Andromeda from "./Andromeda.jsx";
+import Uranus from "./Uranus.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
   {
     path: "/andromeda",
     element: <Andromeda />,
+  },
+  {
+    path: "/uranus",
+    element: <Uranus />,
   },
 ]);
 

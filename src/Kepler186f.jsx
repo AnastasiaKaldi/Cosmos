@@ -4,11 +4,14 @@ import KeplerCanvas from "./KeplerCanvas.jsx";
 function Venus() {
   return (
     <div className="Sky">
-      <div className="Venus text-rose-900 text-7xl">
+      <div className="Venus text-yellow-900 text-7xl">
         <span style={{ fontFamily: "Homemade Apple" }}>Kepler 186 f</span>
       </div>
       <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm">
-        <a className="text-rose-300" style={{ fontFamily: "Playfair Display" }}>
+        <a
+          className="text-orange-200"
+          style={{ fontFamily: "Playfair Display" }}
+        >
           Kepler-186f, the first Earth-sized extrasolar planet to be found
           within its star’s habitable zone—the orbital region where an
           Earth-like planet could possess liquid water on its surface and thus

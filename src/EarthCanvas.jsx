@@ -5,14 +5,14 @@ import { useRef, Suspense } from "react";
 
 const Jupiter = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../public/Earth.jpg"); // Ensure this path is correct
+  const texture = textureLoader.load("../public/Earth.jpeg"); // Ensure this path is correct
 
   // Ensure the texture wraps around correctly
   texture.wrapS = THREE.ClampToEdgeWrapping;
   texture.wrapT = THREE.ClampToEdgeWrapping;
   texture.minFilter = THREE.LinearFilter;
 
-  const geometry = new THREE.SphereGeometry(1.9, 64, 64);
+  const geometry = new THREE.SphereGeometry(1.4, 64, 64);
 
   const meshRef = useRef();
 
@@ -33,7 +33,7 @@ const JupiterCanvas = () => {
   return (
     <Canvas style={{ height: "900px", width: "900px" }}>
       <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 5, 5]} />
+      <directionalLight position={[7, 7, 7]} />
       <OrbitControls />
       <Suspense fallback={null}>
         <Jupiter />

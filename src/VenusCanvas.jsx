@@ -12,7 +12,7 @@ const Jupiter = () => {
   texture.wrapT = THREE.ClampToEdgeWrapping;
   texture.minFilter = THREE.LinearFilter;
 
-  const geometry = new THREE.SphereGeometry(1.5, 64, 64);
+  const geometry = new THREE.SphereGeometry(1.4, 64, 64);
 
   const meshRef = useRef();
 

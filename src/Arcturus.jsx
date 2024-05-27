@@ -4,11 +4,11 @@ import ArcturusCanvas from "./ArcturusCanvas.jsx";
 function Arcturus() {
   return (
     <div className="Sky">
-      <div className="Venus text-rose-900 text-7xl">
+      <div className="Venus text-red-500 text-7xl">
         <span style={{ fontFamily: "Homemade Apple" }}>Artcurus</span>
       </div>
       <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm">
-        <a className="text-rose-300" style={{ fontFamily: "Playfair Display" }}>
+        <a className="text-red-300" style={{ fontFamily: "Playfair Display" }}>
           Arcturus is a red giant star located only 36.7 light-years away. It’s
           the 4th-brightest star in the sky and the brightest one in the
           northern half of the sky. Look for it on spring evenings in the

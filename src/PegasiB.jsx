@@ -4,12 +4,12 @@ import PegasiCanvas from "./PegasiCanvas.jsx";
 function Pegasi() {
   return (
     <div className="Sky">
-      <div className="Venus mr-24 text-fuchsia-200 text-7xl">
-        <span style={{ fontFamily: "Homemade Apple" }}>51 Pagausus b</span>
+      <div className="Venus mr-16 text-yellow-300 text-7xl">
+        <span style={{ fontFamily: "Homemade Apple" }}>51 Pagausus B</span>
       </div>
       <div className="VenusContainer absolute top-72 right-40 rounded-3xl border-black border text-black text-sm transition-transform hover:scale-200">
         <a
-          className="text-fuchsia-200"
+          className="text-yellow-200"
           style={{ fontFamily: "Playfair Display" }}
         >
           51 Pegasi b, the first extrasolar planet confirmed to orbit a sunlike
