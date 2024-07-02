@@ -5,13 +5,13 @@
 /* Custom CSS for specific elements */
 @font-face {
   font-family: 'homemade apple';
-  src: url('dist/public/Homemade_Apple/HomemadeApple-Regular.ttf');
+  src: url('/public/Homemade_Apple/HomemadeApple-Regular.ttf');
   
 }
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('dist/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+  src: url('/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
 
 #root {
