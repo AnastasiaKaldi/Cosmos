@@ -10,7 +10,7 @@ function App() {
       </h1>
       <video autoPlay loop muted className="video-background">
         <source src={solar} type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not support the video tag
       </video>
     </div>
   );
