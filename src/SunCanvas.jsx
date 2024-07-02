@@ -6,7 +6,7 @@ import { useRef, Suspense } from "react";
 
 const Sun = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../dist/public/Sun.jpeg");
+  const texture = textureLoader.load("../public/Sun.jpeg");
 
   texture.wrapS = THREE.ClampToEdgeWrapping;
   texture.wrapT = THREE.ClampToEdgeWrapping;

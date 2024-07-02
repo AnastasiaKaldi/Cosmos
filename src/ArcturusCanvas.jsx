@@ -6,7 +6,7 @@ import { useRef, Suspense } from "react";
 
 const Pegasi = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../dist/public/Arcturus.png");
+  const texture = textureLoader.load("../public/Arcturus.png");
 
   texture.wrapS = THREE.ClampToEdgeWrapping;
   texture.wrapT = THREE.ClampToEdgeWrapping;

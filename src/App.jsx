@@ -1,5 +1,5 @@
 import "./App.css";
-import solar from "../dist/public/solar.mp4";
+import solar from "../public/solar.mp4";
 
 function App() {
   return (
