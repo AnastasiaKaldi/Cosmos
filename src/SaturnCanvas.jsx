@@ -1,10 +1,15 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
 import { useRef, Suspense } from "react";
 
 const Saturn = ({ position }) => {
-  const saturnTexture = useLoader(THREE.TextureLoader, "../public/Saturn.jpg");
+  const saturnTexture = useLoader(
+    THREE.TextureLoader,
+    "../dist/public/Saturn.jpg"
+  );
   const ringTexture = useLoader(
     THREE.TextureLoader,
     "../public/SaturnRing.jpg"

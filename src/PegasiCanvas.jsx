@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
@@ -5,7 +6,7 @@ import { useRef, Suspense } from "react";
 
 const Pegasi = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../public/Pegasi.jpeg");
+  const texture = textureLoader.load("../dist/public/Pegasi.jpeg");
 
   texture.wrapS = THREE.ClampToEdgeWrapping;
   texture.wrapT = THREE.ClampToEdgeWrapping;

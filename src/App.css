@@ -5,13 +5,13 @@
 /* Custom CSS for specific elements */
 @font-face {
   font-family: 'homemade apple';
-  src: url('/public/Homemade_Apple/HomemadeApple-Regular.ttf');
+  src: url('dist/public/Homemade_Apple/HomemadeApple-Regular.ttf');
   
 }
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+  src: url('dist/public/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
 
 #root {
@@ -96,7 +96,7 @@
   }
 
   .Sky{
-    background-image: url('/public/sky.jpg');
+    background-image: url('dist/public/sky.jpg');
     display: flex;
     flex-direction: column;
     color: white;
@@ -146,7 +146,7 @@
   }
 
  .Milk{
-  background-image: url('../public/MilkyWay.avif');
+  background-image: url('../dist/public/MilkyWay.avif');
   display: flex;
   flex-direction: column;
   color: white;
@@ -161,7 +161,7 @@
  }
 
  .andromeda{
-  background-image: url('../public/Andromeda.jpeg');
+  background-image: url('../dist/public/Andromeda.jpeg');
   display: flex;
   flex-direction: column;
   color: white;
