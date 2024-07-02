@@ -96,7 +96,7 @@
   }
 
   .Sky{
-    background-image: url('dist/public/sky.jpg');
+    background-image: url('../public/sky.jpg');
     display: flex;
     flex-direction: column;
     color: white;
@@ -146,7 +146,7 @@
   }
 
  .Milk{
-  background-image: url('../dist/public/MilkyWay.avif');
+  background-image: url('../public/MilkyWay.avif');
   display: flex;
   flex-direction: column;
   color: white;
@@ -161,7 +161,7 @@
  }
 
  .andromeda{
-  background-image: url('../dist/public/Andromeda.jpeg');
+  background-image: url('../public/Andromeda.jpeg');
   display: flex;
   flex-direction: column;
   color: white;
