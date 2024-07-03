@@ -6,7 +6,7 @@ import { useRef, Suspense } from "react";
 
 const Kepler = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../public/Kepler186f.png");
+  const texture = textureLoader.load("/Kepler186f.png");
   texture.wrapS = THREE.ClampToEdgeWrapping;
   texture.wrapT = THREE.ClampToEdgeWrapping;
   texture.minFilter = THREE.LinearFilter;

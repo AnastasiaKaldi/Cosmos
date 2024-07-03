@@ -6,7 +6,7 @@ import { useRef, Suspense } from "react";
 
 const Proxima = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../public/Proxima.jpeg");
+  const texture = textureLoader.load("/Proxima.jpeg");
 
   texture.wrapS = THREE.ClampToEdgeWrapping;
   texture.wrapT = THREE.ClampToEdgeWrapping;
