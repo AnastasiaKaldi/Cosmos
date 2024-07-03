@@ -6,7 +6,7 @@ import { useRef, Suspense } from "react";
 
 const Jupiter = () => {
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("../public/Venus.jpg");
+  const texture = textureLoader.load("../dist/assets/Venus.jpg");
   texture.wrapS = THREE.ClampToEdgeWrapping;
   texture.wrapT = THREE.ClampToEdgeWrapping;
   texture.minFilter = THREE.LinearFilter;
