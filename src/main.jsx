@@ -1,92 +1,42 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
-import NavBar from "./NavBar.jsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Venus from "./Venus.jsx";
-import Mars from "./Mars.jsx";
-import Jupiter from "./Jupiter.jsx";
-import Earth from "./Earth.jsx";
-import Mercury from "./Mercury.jsx";
-import Neptune from "./Neptune.jsx";
-import Saturn from "./Saturn.jsx";
-import Kepler186f from "./Kepler186f.jsx";
-import ProximaCentauriB from "./ProximaCentauriB.jsx";
-import PegasiB from "./PegasiB.jsx";
-import Sun from "./Sun.jsx";
-import Arcturus from "./Arcturus.jsx";
-import MilkyWay from "./Milky-Way.jsx";
-import Andromeda from "./Andromeda.jsx";
-import Uranus from "./Uranus.jsx";
+
+// Lazy-load pages so the initial JS payload is much smaller and three.js
+// only ships when a route that actually needs it is opened.
+const Home = lazy(() => import("./pages/Home.jsx"));
+const Explore = lazy(() => import("./pages/Explore.jsx"));
+const CelestialPage = lazy(() => import("./pages/CelestialPage.jsx"));
+
+const PageFallback = () => (
+  <div className="pt-40 flex items-center justify-center">
+    <div className="w-10 h-10 rounded-full border-2 border-nebula/30 border-t-nebula animate-spin" />
+  </div>
+);
+
+const withSuspense = (Component) => (
+  <Suspense fallback={<PageFallback />}>
+    <Component />
+  </Suspense>
+);
 
 const router = createBrowserRouter([
-  { path: "/", element: <App /> },
   {
-    path: "/venus",
-    element: <Venus />,
-  },
-  {
-    path: "/mars",
-    element: <Mars />,
-  },
-  {
-    path: "/jupiter",
-    element: <Jupiter />,
-  },
-  {
-    path: "/earth",
-    element: <Earth />,
-  },
-  {
-    path: "/mercury",
-    element: <Mercury />,
-  },
-  {
-    path: "/neptune",
-    element: <Neptune />,
-  },
-  {
-    path: "/saturn",
-    element: <Saturn />,
-  },
-  {
-    path: "/kepler-186f",
-    element: <Kepler186f />,
-  },
-  {
-    path: "/proxima-centauri-b",
-    element: <ProximaCentauriB />,
-  },
-  {
-    path: "/51-pegasi-b",
-    element: <PegasiB />,
-  },
-  {
-    path: "/sun",
-    element: <Sun />,
-  },
-  {
-    path: "/arcturus",
-    element: <Arcturus />,
-  },
-  {
-    path: "/milky-way",
-    element: <MilkyWay />,
-  },
-  {
-    path: "/andromeda",
-    element: <Andromeda />,
-  },
-  {
-    path: "/uranus",
-    element: <Uranus />,
+    path: "/",
+    element: <App />,
+    children: [
+      { index: true, element: withSuspense(Home) },
+      { path: "explore", element: withSuspense(Explore) },
+      { path: "explore/:slug", element: withSuspense(CelestialPage) },
+      { path: "*", element: <Navigate to="/" replace /> },
+    ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <NavBar />
     <RouterProvider router={router} />
   </React.StrictMode>
 );
