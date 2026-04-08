@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌌 Cosmos
+# Cosmos
 
 ### *An interactive 3D atlas of the universe.*
 
@@ -14,25 +14,11 @@
 ![Tailwind](https://img.shields.io/badge/Tailwind-3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-11-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-<br />
-
-```
-       *           .             *           .          *
-   .         .            *              .                  .
-       .          ✦                   .            *
-              ___                                   .
-       .    /     \   .         *        .                 .
-   *       |   ◉   |              .             ✦       .
-            \ ___ /                       *
-   .            .          *           .            .
-        .            ✦                          .       *
-```
-
 </div>
 
 ---
 
-## ✨ Wander among the stars
+## Wander among the stars
 
 Cosmos is a living atlas of **planets, exoplanets, stars and galaxies** — built to make the universe feel a little less unknowable. Every celestial body has its own dedicated dashboard with a real-time interactive 3D model, curated facts, and the science behind it.
 
@@ -40,20 +26,20 @@ Cosmos is a living atlas of **planets, exoplanets, stars and galaxies** — buil
 
 ---
 
-## 🪐 What's inside
+## What's inside
 
 | Category | Bodies |
 |----------|--------|
-| 🌍 **Planets** | Mercury · Venus · Earth · Mars · Jupiter · Saturn · Uranus · Neptune |
-| 🌌 **Exoplanets** | Kepler-186f · Proxima Centauri b · 51 Pegasi b |
-| ☀️ **Stars** | The Sun · Arcturus |
-| 🌀 **Galaxies** | The Milky Way · Andromeda |
+| **Planets** | Mercury · Venus · Earth · Mars · Jupiter · Saturn · Uranus · Neptune |
+| **Exoplanets** | Kepler-186f · Proxima Centauri b · 51 Pegasi b |
+| **Stars** | The Sun · Arcturus |
+| **Galaxies** | The Milky Way · Andromeda |
 
 **16 worlds. Endless wonder.**
 
 ---
 
-## 🎨 Features
+## Features
 
 - **Interactive 3D rendering** — every planet and star is a real Three.js sphere with PBR lighting and a hand-tuned cosmic rig. Drag, orbit, fall in.
 - **Procedural particle galaxies** — galaxies aren't textured spheres, they're 9–10k-particle spiral generators with hot-core / cool-rim gradients and configurable arms, spin and randomness. You can zoom into the core of Andromeda.
@@ -66,7 +52,7 @@ Cosmos is a living atlas of **planets, exoplanets, stars and galaxies** — buil
 
 ---
 
-## 🛠️ Tech stack
+## Tech stack
 
 | Layer | Tool |
 |-------|------|
@@ -79,7 +65,7 @@ Cosmos is a living atlas of **planets, exoplanets, stars and galaxies** — buil
 
 ---
 
-## 🎨 The palette
+## The palette
 
 The whole site is built on five colors that bleed from deep space into starlight.
 
@@ -93,7 +79,7 @@ The whole site is built on five colors that bleed from deep space into starlight
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ```bash
 # clone & install
@@ -115,7 +101,7 @@ Then open [http://localhost:5173](http://localhost:5173) and start wandering.
 
 ---
 
-## 📁 Project structure
+## Project structure
 
 ```
 cosmos/
@@ -128,7 +114,7 @@ cosmos/
 │   │   ├── Navbar           # global glass nav
 │   │   └── Starfield        # static multi-layer CSS starfield
 │   ├── data/
-│   │   └── celestials.js    # 🌟 single source of truth — every body lives here
+│   │   └── celestials.js    # single source of truth — every body lives here
 │   ├── pages/
 │   │   ├── Home             # animated landing collage + section gallery
 │   │   ├── Explore          # filterable, searchable atlas
@@ -142,7 +128,7 @@ cosmos/
 
 ---
 
-## 🌠 Adding a new celestial body
+## Adding a new celestial body
 
 Drop one entry into [`src/data/celestials.js`](src/data/celestials.js) and the entire site picks it up automatically — nav, atlas, gallery, sibling navigator, dashboard page, the works.
 
@@ -189,7 +175,7 @@ That's it. No new files. No new routes.
 
 ---
 
-## ⚡ Performance notes
+## Performance notes
 
 - Pages are **lazy-loaded** — Three.js only ships when a celestial route opens.
 - **Manual vendor chunks** keep `react`, `three` and `framer-motion` in their own files for aggressive caching.
@@ -200,7 +186,7 @@ That's it. No new files. No new routes.
 
 ---
 
-## 🌌 Credits
+## Credits
 
 - Planet, star and galaxy textures sourced from public NASA/JPL imagery.
 - Procedural galaxy generator inspired by Bruno Simon's *Three.js Journey*.
@@ -211,7 +197,5 @@ That's it. No new files. No new routes.
 <div align="center">
 
 **Ad astra per aspera.**
-
-*Made with ✦ and a little starlight.*
 
 </div>
