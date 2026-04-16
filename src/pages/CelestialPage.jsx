@@ -6,6 +6,7 @@ import {
   findCelestial,
   CATEGORIES,
 } from "../data/celestials.js";
+import NasaDataPanel from "../components/NasaDataPanel.jsx";
 
 const CelestialCanvas = lazy(() =>
   import("../components/CelestialCanvas.jsx")
@@ -345,6 +346,15 @@ function CelestialPage() {
             </div>
           </div>
         </motion.section>
+
+        {/* ----- NASA live data ----- */}
+        <div className="mt-4">
+          <NasaDataPanel
+            slug={body.slug}
+            category={body.category}
+            accent={body.accent}
+          />
+        </div>
 
         {/* ----- Mobile sibling strip ----- */}
         <div className="lg:hidden mt-4 glass-strong rounded-3xl p-4">

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { celestials, CATEGORIES, findCelestial } from "../data/celestials.js";
 import CelestialCard from "../components/CelestialCard.jsx";
+import ApodCard from "../components/ApodCard.jsx";
 import Footer from "../components/Footer.jsx";
 
 // ---------- Hero collage layout ----------
@@ -284,6 +285,24 @@ function Home() {
             </motion.div>
           ))}
         </div>
+      </section>
+
+      {/* ===== NASA PICTURE OF THE DAY ===== */}
+      <section className="max-w-7xl mx-auto px-6 mt-28">
+        <div className="mb-10">
+          <p className="text-xs uppercase tracking-[0.3em] text-nebula font-semibold">
+            Live from NASA
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mt-3 text-gradient">
+            Picture of the day
+          </h2>
+          <p className="mt-3 text-stardust/70 max-w-2xl">
+            Every day, NASA selects a new image or video of our universe and
+            pairs it with a brief explanation written by a professional
+            astronomer. Here is today's pick.
+          </p>
+        </div>
+        <ApodCard />
       </section>
 
       <Section

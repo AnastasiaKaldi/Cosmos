@@ -14,8 +14,8 @@ export default {
         stardust: "#f5f3ff",    // near-white lavender (text)
       },
       fontFamily: {
-        display: ['"Space Grotesk"', "system-ui", "sans-serif"],
-        body: ['"Inter"', "system-ui", "sans-serif"],
+        display: ['"Comfortaa"', "system-ui", "sans-serif"],
+        body: ['"Quicksand"', "system-ui", "sans-serif"],
       },
       backgroundImage: {
         "cosmic-gradient":
